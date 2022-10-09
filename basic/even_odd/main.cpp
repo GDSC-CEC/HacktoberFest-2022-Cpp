@@ -6,6 +6,10 @@ bool even_odd(int n){
    //Enter your code here
    // return true is number is even
    // or return false if number is odd
+ if(n%2==0){
+  return true;
+ }
+ return false;
 }
 
 
