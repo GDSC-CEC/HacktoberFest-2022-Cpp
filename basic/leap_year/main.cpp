@@ -4,6 +4,8 @@ using namespace std;
  
 bool leap_year(int n){
    //Enter your code here
+   if(n%4==0) return true;
+   else return false;
 }
 
 //Driver Code
