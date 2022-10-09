@@ -2,7 +2,18 @@
 using namespace std;
  
 void right_angle_triangle_with_number(int n){
-   //Enter your code here
+   int i,j;
+    for(i=1;i<=n;i++)
+    {
+        for(j=1;j<=n;j++)
+        {
+            if(i>=j)
+            {
+                cout<<j;
+            }
+        }
+        cout<<"\n";
+    }
 }
 int main()
 {   
