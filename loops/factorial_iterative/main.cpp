@@ -2,7 +2,9 @@
 using namespace std;
  
 double factorial(int n){
-   //Enter your code here
+    double res=1;
+   for(int i=1;i<=n;i++) res*=i;
+   return res;
 }
 
 //Driver Code
