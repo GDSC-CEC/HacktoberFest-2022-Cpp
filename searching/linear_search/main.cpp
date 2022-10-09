@@ -6,6 +6,13 @@ using namespace std;
 int linearSearch(int arr[],int size ,int element)
 {  
     // enter your code here
+ for(int i=0;i<size;i++)
+ {
+  if(arr[i] == element)
+  {
+   return i;
+  }
+  return -1;
 }
  
 //Driver Code
