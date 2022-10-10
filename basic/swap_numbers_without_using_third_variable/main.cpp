@@ -3,7 +3,9 @@
 using namespace std;
  
 void swap(int &a,int &b){
-   //Enter your code here
+     a = a ^ b;
+     b = a ^ b;
+     a = a ^ b;
 }
 
 //Driver Code
