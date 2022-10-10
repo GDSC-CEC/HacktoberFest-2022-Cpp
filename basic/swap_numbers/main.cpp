@@ -4,6 +4,9 @@ using namespace std;
  
 void swap(int &a,int &b){
    //Enter your code here
+ int temp = a;
+ a = b;
+ b = temp;
 }
 
 //Driver Code
