@@ -5,7 +5,13 @@ using namespace std;
 
 void bubbleSort_recursive(int arr[],int size)
 {  
-    // enter your code here
+    if(size == 1)
+        return;
+    if(arr[0] > arr[1])
+        swap(arr[0], arr[1]);
+    bubbleSort_recursive(arr+1,size-1);
+    
+    bubbleSort_recursive(arr,size-1);
 }
 
 void printArray(int arr[], int n) // function to print elements of the array
