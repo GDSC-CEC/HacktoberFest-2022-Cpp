@@ -1,5 +1,5 @@
 // C++ program to implement Binary Search using Recursion
-#include <iostream.h>
+#include <iostream>
 using namespace std;
  
 
