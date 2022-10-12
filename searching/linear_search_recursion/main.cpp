@@ -29,7 +29,7 @@ int main()
    int element; // element to be searched
     cin>>element;
  
-    int result = linearSearch__recursive(arr,size,element);
+    int result = linearSearch_recursive(arr,size,element);
     (result == -1)
         ? cout << "Element is not present in array"
         : cout << "Element is present at index " << result;
