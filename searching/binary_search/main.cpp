@@ -1,11 +1,36 @@
 // C++ program to implement Binary Search
-#include <iostream.h>
+#include <iostream>
 using namespace std;
  
 
 int binarySearch(int arr[], int l, int r, int x)
 {
-   // enter your code here
+   int i=0,j=r,mid=0,b=0;
+    while(i<=j)
+    {
+        mid=(i+j)/2;
+        if(arr[mid]==x)
+        {
+            b=1;
+            break;
+        }
+        else if(arr[mid]>x)
+        {
+            j=mid-1;
+        }
+        else
+        {
+            i=mid+1;
+        }
+    }
+    if(b==1)
+    {
+        cout<<"Present at "<<mid<<endl;
+    }
+    else
+    {
+        cout<<"Not found"<<endl;
+    }
 }
  
 int main()
