@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std;
  
+
 void right_angle_triangle_pattern(int n){
    int i , j;
    for(i=1;i<=n;i++)
@@ -18,7 +19,7 @@ void right_angle_triangle_pattern(int n){
         }
         printf("\n");
     }
-}
+  }
 
 //Driver Code
 int main()
