@@ -20,7 +20,6 @@ void right_angle_triangle_pattern(int n){
     }
 }
 
-//Driver Code
 int main()
 {   
     int n;
