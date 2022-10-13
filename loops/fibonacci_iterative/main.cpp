@@ -4,6 +4,10 @@ using namespace std;
 int fibonacci(int n){
    //Enter your code here
    // print the answer in the fucntion itself
+   if(n==0){
+    return 1;
+   }
+   return n * fibonacci(n-1);
 }
 
 //Driver Code
