@@ -17,7 +17,7 @@ void half_pyramid_pattern(int n){
         }
    }
    else{
-     cout<<"enter the valid n";
+     cout<<"Enter the valid n";
    }
    
 }
