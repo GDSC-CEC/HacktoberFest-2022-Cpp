@@ -2,10 +2,28 @@
 #include <iostream>
 using namespace std;
  
+ int minInd(int arr[], int index, int sz)
+{
+    if (index == sz)
+        return index;
+ 
+    int m = minInd(arr, index + 1, sz);
+ 
+    return (arr[index] < arr[m])? index : m;
+}
 
-void selectionSort_recursive(int arr[],int size)
+void selectionSort_recursive(int arr[],int size, int index=0)
 {  
          // enter your code here
+         if(index==size)
+            return;
+
+        int x = minInd(arr, index, size-1); 
+
+        if(x!=index)
+            swap(arr[x],arr[index]);
+
+        selectionSort_recursive(arr, size, index+1);
 }
 
 
