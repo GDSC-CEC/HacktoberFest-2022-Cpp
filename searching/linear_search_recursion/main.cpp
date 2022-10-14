@@ -6,6 +6,19 @@ using namespace std;
 int linearSearch_recursive(int arr[],int size ,int element)
 {  
     // enter your code here
+ size--;
+     
+    // Base case (Element not present in the array)
+    if (size < 0) {
+        return -1;
+    }
+    // Base case (Element found, return its position)
+    if (arr[size] == element) {
+        return size;
+    }
+ 
+    // Recursive case
+    return linearSearch_recursive(arr, size, element);
 }
  
 // Driver Code
@@ -22,7 +35,7 @@ int main()
    int element; // element to be searched
     cin>>element;
  
-    int result = linearSearch__recursive(arr,size,element);
+    int result = linearSearch_recursive(arr,size,element);
     (result == -1)
         ? cout << "Element is not present in array"
         : cout << "Element is present at index " << result;
