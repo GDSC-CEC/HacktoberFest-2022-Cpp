@@ -9,7 +9,7 @@ void right_angle_triangle_with_number(int n){
         {
             cout << j << " ";
         }
-        cout << "\n";
+        cout << endl;
     }
 }
 int main()
