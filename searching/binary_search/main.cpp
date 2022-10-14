@@ -5,7 +5,19 @@ using namespace std;
 
 int binarySearch(int arr[], int l, int r, int x)
 {
-   // enter your code here
+    if (l <= r) {
+      int mid = (l + r)/2;
+     
+      if (arr[mid] == x)
+         return mid ;
+     
+      if (arr[mid] > x)
+         return binarySearch(arr, l, mid-1, x);
+     
+      if (arr[mid] < x)
+         return binarySearch(arr, mid+1, r, x);
+   }
+   return -1;
 }
  
 int main()
