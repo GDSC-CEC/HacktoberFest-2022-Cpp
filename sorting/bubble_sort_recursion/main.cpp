@@ -3,9 +3,16 @@
 using namespace std;
  
 
-void bubbleSort_recursive(int arr[],int size)
+void bubbleSort_recursive(int arr[],int n)
 {  
-    // enter your code here
+    if (n == 1)
+        return;
+ 
+    for (int i=0; i<=n-2; i++)
+        if (arr[i] > arr[i+1])
+            swap(arr[i], arr[i+1]);
+ 
+    bubbleSort_recursive(arr, n-1);
 }
 
 void printArray(int arr[], int n) // function to print elements of the array

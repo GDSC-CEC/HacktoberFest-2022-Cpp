@@ -5,7 +5,19 @@ using namespace std;
 
 int linearSearch(int arr[],int size ,int element)
 {  
-    // enter your code here
+    
+    if(size == 0){
+            return -1;
+        }
+        // run a loop
+        for(int i = 0 ; i < size ; i++){
+            //check for element at every index if it is = target
+            if(arr[i] == element){
+                return i;
+            }
+    }
+        return -1;
+
 }
  
 //Driver Code

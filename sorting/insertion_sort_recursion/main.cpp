@@ -6,6 +6,21 @@ using namespace std;
 void insertionSort_recursion(int arr[],int size)
 {  
          // enter your code here
+    if (size <= 1)
+        return;
+ 
+    insertionSort_recursion( arr, size-1 );
+ 
+    int last = arr[size-1];
+    int j = size-2;
+ 
+
+    while (j >= 0 && arr[j] > last)
+    {
+        arr[j+1] = arr[j];
+        j--;
+    }
+    arr[j+1] = last;
 }
 
 
