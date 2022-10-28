@@ -1,9 +1,9 @@
 #include<iostream>
 using namespace std;
  
-double sum_of_digits(int n){
+ddouble sum_of_digits(long n){
    //Enter your code here
-   
+   // long is better to use
    int sum=0,temp;
    if(n>0)
    {
@@ -24,7 +24,7 @@ double sum_of_digits(int n){
 //Driver Code
 int main()
 {   
-    double n;
+    long  n
     cin>>n;
     cout<<sum_of_digits(n);
     return 0;
