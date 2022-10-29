@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
  
-ddouble sum_of_digits(long n){
+double sum_of_digits(long n){
    //Enter your code here
    // long is better to use
    int sum=0,temp;
